@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<div class="topnav">
+
+    <a class="active" href="#home">Home</a>
+
+    <a href="#">About_Us</a>
+
+    <a href="#">Gallery</a>
+
+    <a href="#">Contact_Us</a>
+    </div>
+    <section>
+    
+        <img class="myslides" src="https://i.chzbgr.com/thumb800/20923653/hB70F2A46/pictures-of-goats-thumbnail-includes-two-pictures-including-a-cute-goat-and-two-goats-on-a-cliff" style="height : 500px;">
+    
+        <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4qtboERRgtmIzB8w_-SlEgRr-yJCC7qpo7g&s" style="height:500px;">
+    
+    </section>
+    
+<span class="trans" style="font-size:40px;">
+
+    <center>Welcome to my beautiful world of websites<center>
+        <h2>Section One</h2>
+        
+        <p>
+        
+            hi so i am Palakshi and i am writing this code as a activity of coding is the best thing i have learnt till now
+        
+        </p>
+        
+        </section>
+        
+        <div class="pimg3">
+        
+            <div class="ptext">
+        
+                <span class="border trans">
+        
+                    Image Two Text
+        
+                </span>
+        
+            </div>
+        
+        </div>
+
+<div class="footer">
+
+    <p>@copy all rights and reserved by palakshi regmi</p>
+    </div>
+
+    <script>
+0
+        var myIndex = 0;
+
+       carousel() ;
+
+            function carousel() {
+
+                var i;
+
+                var x = document.getElementsByClassName("myslides");
+
+                for (i = 0; i < x.length; i++) {
+
+                    x[i].style.display = "none";
+
+                }
+
+                myIndex++;
+
+                if (myIndex > x.length) { myIndex = 1 }
+
+                x[myIndex - 1].style.display = "block";
+
+                setTimeout(carousel, 3000);
+
+            }
+        
+    </script>
+</body>
+</html>
